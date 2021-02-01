@@ -1,0 +1,60 @@
+컴퓨터 통신 매체(media)
+# 전자기파
+1) copper(구리) -> (전기신호 (1, 0))
+2) fiber optical(광섬유) -> (빛)
+3) radio wave(무선) -> (전파)
+*양자통신
+
+규모에 따른 네트워크 분류
+1) LAN
+2) WAN(ISP) 시리얼통신
+＊MAN
+3) Internet
+※인터 프린터 필요 -> 게이트웨이(서로 다른 프로토콜을 연결)
+
+통신방식 
+1) unicast ( 1 : 1 통신 )
+2) broadcast ( 1 : N 통신 ) 불특정 다수
+3) multicast ( 1 : M 통신 ) 특정 다수
+모두 단방향 통신
+unicast가 대부분의 통신방식으로 쓰이고 unicast를 사용하기 위해서는
+broadcast가 필수적으로 필요하다.
+
+주소
+1) 물리적인 주소 (MAC : 48bit) IEEE(전자 전기 기술자 협회)에서 관리
+앞 24bit는 OUI라고해서 IEEE에서 발급, 
+옥텟 규칙으로 6개로 잘라서 16진수로 번역
+※변하지 않는 주민등록번호 같은 느낌
+
+2)논리적인 주소(IP : 32bit) IANA(인터넷 할당 번호 관리기관)에서 관리
+4개 옥텟으로 나눠서 10진수로 번역 ex) 192.168.10.1
+※변하는 학번, 군번, 사번과 같은 느낌(시간과 공간에 따라 달라짐)
+
+방식에 따른 네트워크 분류
+1) Broad Band(주파수 분할 방식)
+한 케이블을 여러 주파수로 나눠서 신호를 보내고 받는 방식(TV 채널)
+2) Base Band(시분할 방식)
+한 케이블에서는 시간에 따라 한 작업만 가능(이더넷)
+
+OSI 7 layer
+SI [ Developer, SE, NE ]
+
+---------------------------------[ upper layyer ]---------------------------------
+7. (application layer) chrome, kakao | 네트워크를 지원하는 애플리 케이션
+6. (presentation layer) Ascii, img, mp4 | 네트워크에서 데이터를 표현할 방식
+5. (session layer) 연결의 시작과 유지, 종료를 담당 (아래 각 4계층에 명령)
+--------------------------------[ data flow layer ]--------------------------------
+4. (transport layer) 모든 데이터들을 1460byte 크기로 분할(segment->PDU), 합치는 과정
+쪼개진 1460byte 앞에 L4 Header(20byte)가 붙어 1480byte가 됨
+checksum을 비교해서 에러제어(흐름제어), window 사이즈의 크기제어를 통함(슬라이드 윈도우)
+1) TCP : 흐름제어를 통한 에러제어(중요한 데이터) 3 way hankshake(확립 된 연결)
+2) UDP : 에러제어 그딴거 없음(실시간 데이터) 에러가 나도 그냥 수신할 때 사용(전화, TV)
+위 두 방식 다 16bit, 포트(0~65535)에 따라 도착하는 애플리케이션이 다름
+방화벽이 port제어를하고, VPN은 열린 포트번호를 헤더에 붙여 방화벽을 넘긴 뒤 원하는 포트에 접근한다.
+3. (network) L3 Header(20byte)가 붙어 작성 된 시작 ip, 끝 ip를 보고 경로설정(라우팅)
+2. (data link) MAC주소를 보고 어디로 보낼지 확인 , ran 환경 frame 전송
+1. (physical) 데이터를 bit(PDU)열로 변환
+destination MAC(6) | source MAC(6) | source IP | destination IP | 통신규약과 포트 | 원하는 위치와 데이터 방식 | FCS(4)
+                                                     
+
+
