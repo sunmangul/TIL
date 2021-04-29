@@ -17,3 +17,8 @@
 - 2021-04-27
   - 메모리 커럽션
     - Double Free & Use-After-Free
+- 2021-04-29
+  - 메모리 커럽션
+    - Double Free & Use-After-Free
+    - 초기화 되지 않은 메모리
+    - Integer issues - 정수의 범위
