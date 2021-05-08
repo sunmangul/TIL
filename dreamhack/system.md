@@ -30,3 +30,7 @@
     - Integer issues End
   - 메모리 커럽션 (C++)
     - Buffer Overflow in C++
+- 2021-05-08
+  - 로지컬 버그
+    - 커맨드 인젝션
+    - 레이스 
