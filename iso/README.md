@@ -21,3 +21,6 @@
     - Gnome3
   - Mint
     - Cinnamon
+- 2021.05.20
+  - Kubuntu 20.04 LTS
+    - KDE Plasma
