@@ -1,6 +1,18 @@
 # OS관련 뻘짓들
 
-### 설치한 OS
+### 설치해본 OS
+- Arch
+  - Black Arch
+  - Artix
+  - Manjaro
+- Debian
+  - Ubuntu
+    - Ubuntu 20.04 LTS
+    - Mint
+    - Kubuntu
+  - Kali
+- Slackware
+
 
 ### 현재 데스크탑으로 쓰는 OS
 
