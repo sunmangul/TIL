@@ -24,3 +24,6 @@
 - 2021.05.20
   - Kubuntu 20.04 LTS
     - KDE Plasma
+- 2021.05.22
+  - Kubuntu 21.04 (자주 포맷하는 편인데다가 구지  LTS 쓸 이유가 없었다)
+    - KDE Plasma
