@@ -37,3 +37,6 @@
 - 2021-05-21
   - 메모리 커럽션 (C++)
     - Container Overflow
+- 2021-05-26
+  - 메모리 커럽션 (C++)
+    - Uninitialized Value
