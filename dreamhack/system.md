@@ -40,3 +40,6 @@
 - 2021-05-26
   - 메모리 커럽션 (C++)
     - Uninitialized Value
+- 2021-05-27
+  - 메모리 커럽션 (c++)
+    - USE-AFTER-FREE
