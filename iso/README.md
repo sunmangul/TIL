@@ -12,6 +12,7 @@
     - Kubuntu
   - Kali
 - Slackware
+- Solaris
 
 
 ### 현재 데스크탑으로 쓰는 OS
