@@ -14,3 +14,7 @@
     - 레지스터
     - Instruction Format
     - Instructions
+- 2021-06-08
+  - puts("helloworld\n"); -> x86_64 asm
+    - hello world
+    - hello world disassembly
