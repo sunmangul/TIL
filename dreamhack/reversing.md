@@ -20,5 +20,7 @@
     - hello world disassembly
 - 2021-06-09
   - puts("helloworld\n"); -> x86_64 asm
-    - hello world.exe
-    - 쉬운 crackme를 통한 디버거 사용법
+  - hello world.exe
+  - 쉬운 crackme를 통한 디버거 사용법 - 1
+- 2021-06-13
+  - 쉬운 crackme를 통한 디버거 사용법 - 2
